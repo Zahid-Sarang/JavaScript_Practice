@@ -1,15 +1,18 @@
 //===================array to object===============================//
 
-var techBrands = [
-  "FaceBook",
-  "LinkedIn",
-  "Twitter",
-  "Instagram",
-  "Youtube",
-  "Google",
-];
+// var techBrands = [
+//    'FaceBook',
+//    'LinkedIn',
+//    'Twitter',
+//    'Instagram',
+//    'Youtube',
+//   'Google'
+// ];
 // var object = {...techBrands};
 // console.log(object)
+
+// let obj = techBrands.reduce((a,it,i) => ({...a,[i]:it}), {})
+// console.log(obj)
 
 //===================Fill array with data===============================//
 
@@ -88,7 +91,7 @@ var techBrands = [
 // =============================== Move Zero to end of the Array ==================================//
 
 // var array = [1,0,2,0,4,6]
- 
+
 // array.map((item) => {
 //   if(item === 0){
 //     array.splice(array.indexOf(item),1)
@@ -97,3 +100,49 @@ var techBrands = [
 // })
 // console.log(array)
 
+//=========================== Object to Array ===============================//
+
+// const obj = {
+//   '0': 'FaceBook',
+//   '1': 'LinkedIn',
+//   '2': 'Twitter',
+//   '3': 'Instagram',
+//   '4': 'Youtube',
+//   '5': 'Google',
+//   '5': 'Google',
+// }
+
+// const array = Object.keys(obj).map(key => obj[key])
+// // console.log(array)
+// console.log(obj[0])
+
+// const arr = Object.keys(obj)   // it converts object keys into array
+// const arr = Object.values(obj) // it converts object values into array
+//  const arr = Object.entries(obj); // it creates array inside array
+// it convert key value into 1 single Array like [['0','FaceBook']]
+// console.log(arr)
+
+//=========================== Find Duplicates value in Array ===============================//
+
+var array = [6, 9, 15, 6, 13, 9, 11, 15];
+
+// const length = array.length;
+// var newArray = [];
+
+// for(let i = 0;i<length -1 ;i++){
+//   for(let j = i+1;j<length;j++){
+//     if(array[i] === array[j]){
+//       newArray.push(array[i])
+//     }
+//   }
+// }
+
+// console.log(newArray)
+
+// method 2:
+
+// var newArr = array.filter(
+//   (currentValue, currentIndex) => array.indexOf(currentValue) !== currentIndex
+// );
+
+// console.log(newArr)
