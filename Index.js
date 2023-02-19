@@ -124,7 +124,7 @@
 
 //=========================== Find Duplicates value in Array ===============================//
 
-var array = [6, 9, 15, 6, 13, 9, 11, 15];
+// var array = [6, 9, 15, 6, 13, 9, 11, 15];
 
 // const length = array.length;
 // var newArray = [];
@@ -146,3 +146,26 @@ var array = [6, 9, 15, 6, 13, 9, 11, 15];
 // );
 
 // console.log(newArr)
+
+// Method 3:
+
+// const uniqueSet = new Set(array);
+// console.log(uniqueSet)
+// const filterElement = array.filter((arr) => {
+//   if(uniqueSet.has(arr)){
+//     uniqueSet.delete(arr)
+//   }else{
+//     return arr;
+//   }
+// })
+
+// console.log(filterElement);
+
+// In the above example, the array is the initial array, and uniqueSet is the set that contains 
+// all the values from the array only one time. After that we are using the filter() function 
+// where the array is checked for duplicate values with uniqueSet using has() method, 
+// and it will return all the values from the array that remains after deleting the 
+// items that are common in the uniqueSet and array.
+
+//=========================== Find Duplicates value in Object ===============================//
+
