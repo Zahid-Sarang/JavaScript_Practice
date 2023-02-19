@@ -84,3 +84,16 @@ var techBrands = [
 // };
 
 // const clonedCart = JSON.parse(JSON.stringify(cart));
+
+// =============================== Move Zero to end of the Array ==================================//
+
+// var array = [1,0,2,0,4,6]
+ 
+// array.map((item) => {
+//   if(item === 0){
+//     array.splice(array.indexOf(item),1)
+//     array.push(item)
+//   }
+// })
+// console.log(array)
+
