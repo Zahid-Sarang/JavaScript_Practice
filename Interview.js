@@ -43,6 +43,30 @@
 
 //======================================================================================//
 
+// Find the common object
+
+// const input1 = { a: 1, b: 2, c: 3, d: 10, e: 12 };
+// const input2 = { a: 2, e: 12, f: 6, d: 10 };
+
+// const output = { d: 10, e: 12 }; // expected output
+
+// function commonObject(input1, input2) {
+//     let obj = {};
+//     for(let i in input1){
+//         if(input1[i] == input2[i]){
+//             obj[i] = input1[i]
+//         }
+//     }
+//     return obj;
+// }
+
+// console.log(commonObject(input1, input2));
+
+// const commonObject = Object.keys(input1).filter(key => input2.hasOwnProperty(key))
+// console.log(commonObject)     // it returns keys only
 
 
+//======================================================================================//
 
+console.log(a)
+var a = 10
