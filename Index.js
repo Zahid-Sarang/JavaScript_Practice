@@ -169,19 +169,19 @@
 
 //=========================== Find Duplicates value in Object ===============================//
 
-const obj = {a: 1, b: 2, c: 3, d: 2, e: 1};
+// const obj = {a: 1, b: 2, c: 3, d: 2, e: 1};
 
-let repeated = new Map();
-for (let key in obj) {
-  if (repeated.has(obj[key])) {
-    repeated.set(obj[key], repeated.get(obj[key]) + 1);
-  } else {
-    repeated.set(obj[key], 1);
-  }
-}
+// let repeated = new Map();
+// for (let key in obj) {
+//   if (repeated.has(obj[key])) {
+//     repeated.set(obj[key], repeated.get(obj[key]) + 1);
+//   } else {
+//     repeated.set(obj[key], 1);
+//   }
+// }
 
-repeated.forEach(function (value, key) {
-  if (value > 1) {
-    console.log(key + "is repeate " + value + "times.");
-  }
-});
+// repeated.forEach(function (value, key) {
+//   if (value > 1) {
+//     console.log(key + "is repeate " + value + "times.");
+//   }
+// });
