@@ -24,15 +24,20 @@ function BankAccount(customerName, balance = 0) {
 // in the javaScript whenever function is created a prototype property add to every function
 // and prototype value is empty object {}
 
-BankAccount.prototype.deposit = function (amount) {
-  // you can not use arrow function because arrow func doesn't have it's own context and it will be find this.balnce on window object and it dot get it
-  this.balance += amount;
-};
+// BankAccount.prototype.deposit = function (amount) {
+//   // you can not use arrow function because arrow func doesn't have it's own context and it will be find this.balnce on window object and it dot get it
+//   this.balance += amount;
+// };
 
-console.log(BankAccount.prototype);
+// console.log(BankAccount.prototype);
 
-const account1 = new BankAccount("John", 100);
-account1.deposit(500);
+BankAccount.prototype.withdraw = function (amount) {
+  this.balance -= amount
+}
+
+const account1 = new BankAccount("John", 10000);
+// account1.deposit(500);
+ account1.withdraw (400)
 console.log(account1);
 
 // Javascript will first check in the constructor, if it does not find the method, then it will check in the prototype. if it still dont get that then it will check BankAccount constructor
