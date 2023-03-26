@@ -86,3 +86,12 @@
 /*       Dom Events       */
 /*------------------------*/
 
+// const button = document.querySelector('#btn');
+// const heading= document.querySelector('#heading');
+
+// button.addEventListener('click',function(event){
+//     heading.style.color = "purple";
+//     heading.style.fontSize = "2.5rem";
+//     console.log('Button click',event)
+// })
+
