@@ -24,12 +24,10 @@
 // console.log(heading)
 // console.log(headings)
 
-
 // 5. querySelectorAll
 
 // const heading = document.querySelectorAll('.heading');
 // console.log(heading)
-
 
 /*--------------------------*/
 /*       Traverse Dom       */
@@ -52,7 +50,6 @@
 // const heading = document.querySelector('h3');
 // console.log(heading.previousElementSibling)
 
-
 /*--------------------------*/
 /*       Manipulation       */
 /*--------------------------*/
@@ -63,7 +60,6 @@
 // heading.style.fontSize = "4rem"
 // heading.classList.add('title');
 // heading.classList.remove('heading');
-
 
 /*-----------------------------*/
 /*       Create Elements       */
@@ -81,7 +77,6 @@
 
 // console.log(heading)
 
-
 /*------------------------*/
 /*       Dom Events       */
 /*------------------------*/
@@ -95,3 +90,19 @@
 //     console.log('Button click',event)
 // })
 
+/*---------------------------------*/
+/*       Project bulb on off       */
+/*---------------------------------*/
+
+const bulbSwitch = document.querySelector("#bulbSwitch");
+const bulb = document.querySelector("#bulb");
+bulbSwitch.addEventListener("click", function () {
+  console.log(bulb.src);
+  if (bulb.src.match("off")) {
+    bulb.src = "./bulb-on.gif";
+    bulbSwitch.innerHTML="Trun Off"
+  } else {
+    bulb.src = "./bulb-off.gif";
+    bulbSwitch.innerHTML="Trun On"
+  }
+});
