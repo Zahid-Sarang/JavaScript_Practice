@@ -1,6 +1,6 @@
-/*------------------------------*/
-/*       Dom manipulation       */
-/*------------------------------*/
+/*--------------------------------------------*/
+/*       Methods for Selecting Elements       */
+/*--------------------------------------------*/
 
 // 1. getElementById
 
@@ -29,4 +29,43 @@
 
 // const heading = document.querySelectorAll('.heading');
 // console.log(heading)
+
+
+/*--------------------------*/
+/*       Traverse Dom       */
+/*--------------------------*/
+
+// 1 . Parent Node
+// const heading = document.querySelector('.heading');
+// const parent = heading.parentNode;
+// console.log(parent)
+
+// 2. Children Nodes
+// const parent = document.querySelector(".parent");
+// console.log(parent.childNodes);
+
+// 3. nextElementSibling
+// const heading = document.querySelector('.heading');
+// console.log(heading.nextElementSibling)
+
+// 4. previousElementSibling
+// const heading = document.querySelector('h3');
+// console.log(heading.previousElementSibling)
+
+
+/*--------------------------*/
+/*       Manipulation       */
+/*--------------------------*/
+
+// const heading = document.querySelector('.heading');
+// heading.innerHTML = "JavaScript tutorial!"
+// heading.style.color = "red";
+// heading.style.fontSize = "4rem"
+// heading.classList.add('title');
+// heading.classList.remove('heading');
+
+
+/*-----------------------------*/
+/*       Create Elements       */
+/*-----------------------------*/
 
