@@ -69,3 +69,20 @@
 /*       Create Elements       */
 /*-----------------------------*/
 
+// const heading = document.createElement('h1')
+// heading.innerHTML = "JavaScript is Awesome!";
+// heading.classList.add('title');
+// const parent =  document.querySelector('.parent')
+// parent.appendChild(heading);
+
+// const subheading = document.createElement('h3');
+// subheading.innerHTML = "Web dev is awesome!"
+// heading.insertAdjacentElement('afterend',subheading);
+
+// console.log(heading)
+
+
+/*------------------------*/
+/*       Dom Events       */
+/*------------------------*/
+
