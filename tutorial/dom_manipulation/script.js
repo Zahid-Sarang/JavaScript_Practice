@@ -94,15 +94,56 @@
 /*       Project bulb on off       */
 /*---------------------------------*/
 
-const bulbSwitch = document.querySelector("#bulbSwitch");
-const bulb = document.querySelector("#bulb");
-bulbSwitch.addEventListener("click", function () {
-  console.log(bulb.src);
-  if (bulb.src.match("off")) {
-    bulb.src = "./bulb-on.gif";
-    bulbSwitch.innerHTML="Trun Off"
-  } else {
-    bulb.src = "./bulb-off.gif";
-    bulbSwitch.innerHTML="Trun On"
-  }
+// const bulbSwitch = document.querySelector("#bulbSwitch");
+// const bulb = document.querySelector("#bulb");
+// bulbSwitch.addEventListener("click", function () {
+//   console.log(bulb.src);
+//   if (bulb.src.match("off")) {
+//     bulb.src = "./bulb-on.gif";
+//     bulbSwitch.innerHTML="Trun Off"
+//   } else {
+//     bulb.src = "./bulb-off.gif";
+//     bulbSwitch.innerHTML="Trun On"
+//   }
+// });
+
+/*------------------------------*/
+/*       Project Api Call       */
+/*------------------------------*/
+
+const root = document.querySelector("#root");
+const button = document.querySelector("#imgbtn");
+
+function createItem(items) {
+  // card
+  const card = document.createElement("div");
+  card.classList.add("card");
+
+  //photo
+  const photo = document.createElement("img");
+  photo.src = items.thumbnailUrl;
+
+  // title
+  const title = document.createElement("h4");
+  title.innerHTML = items.title;
+
+  card.appendChild(photo)
+  card.appendChild(title);
+
+  root.appendChild(card)
+}
+
+function displayImages(items) {
+  items.forEach(function (items) {
+    createItem(items);
+  });
+  console.log(items);
+}
+
+button.addEventListener("click", function () {
+  fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
+    .then((res) => res.json())
+    .then((items) => {
+      displayImages(items);
+    });
 });
